@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+        font-family:Arial, Helvetica, sans-serif
+        
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float:left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8 px 0 rgba(0,0,0,0.2);
+        margin: 8px;
+    }
+
+    .about-section {
+        padding: 30px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after, .row::before {
+        content:"";
+        clear: both;
+        display: table;;
+    }
+
+    .title {
+        color: grey;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color:#000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .button:hover {
+        background-color: #555;
+    }
+
+    .about-me {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - About</title>
+</head>
+
+<body>
+    
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+    <a class="active" href="about.html">About</a>
+</div>
+
+<div class="about-section">
+    <h1> About Us Page</h1>
+</div>
+
+<h2 style=text-align:center>Our Team</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="images/Default_pfp.jpg" alt="Andy" style="width:100%">
+            <div class="container">
+                <h2>Andy Su</h2>
+                <p class="title">Student</p>
+                <p>asu42@uwo.ca</p>
+                <p><button class="button" onclick="location.href='contact.html'">Contact</button></p>
+            </div>
+        </div>
+
+        <div class="about-me">
+        <h2>About Me</h2>
+            <p>I am a software engineering student at the University of Western Ontario</p>
+            <p>I have a passion for coding, web development, and game creation</p>
+            <p>In my free time I like to play tennis, go snowboarding, and ride motorcycles</p>  </p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="footer">
+    <p>email: asu42@uwo.ca | cell #: 647-545-2865</p>
+</div>
+
+<div>
+
+
+
+</html>
